@@ -288,6 +288,11 @@
   
 
     <script>
+
+        // Exibe o texto do "Sobre Mim" ao carregar a página
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("sobre-mim-text").style.display = "block";
+        });
         const texts = [
             { title: 'Etapa 1 - Entre em contato comigo', explanation: 'Você pode entrar em contato comigo pelo whats:<br><br>WhatsApp: Clique no ícone localizado no canto superior esquerdo da página para iniciar uma conversa rápida e direta.<br><br>'},
             { title: 'Etapa 2 - Explicação do problema', explanation: 'Nesta fase, descreva com clareza e em detalhes o que você precisa de ajuda. Sinta-se à vontade para fornecer todas as informações necessárias para que eu possa oferecer o melhor suporte possível. Não se preocupe, você não tem compromisso em fechar negócio neste momento.' },
