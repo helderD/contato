@@ -150,9 +150,9 @@
             top: 20px;
             right: 20px;
             display: flex;
-            gap: 10px;
-            flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-            justify-content: flex-end; /* Alinha os itens à direita */
+            gap: 10px; /* Espaçamento entre os botões */
+            flex-direction: row; /* Alinha os itens horizontalmente */
+            align-items: center; /* Alinha os itens verticalmente no centro */
             z-index: 2;
         }
 
@@ -164,7 +164,7 @@
             border-radius: 5px;
             font-family: 'Arial', sans-serif;
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.5); /* Adicione um fundo semi-transparente para melhor visibilidade */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor visibilidade */
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -172,13 +172,13 @@
             background-color: rgba(0, 0, 0, 0.8);
             color: #ffffff;
         }
+
         /* Media query para telas pequenas */
         @media (max-width: 576px) {
             .header {
-                position: static; /* Remove o posicionamento absoluto */
-                justify-content: center; /* Centraliza os itens horizontalmente */
-                flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
-                padding: 10px 0; /* Adiciona padding para melhorar a aparência */
+                top: 10px; /* Ajusta a distância do topo para telas pequenas */
+                right: 10px; /* Ajusta a distância da borda direita para telas pequenas */
+                gap: 8px; /* Reduz o espaço entre os botões para telas menores */
             }
 
             .header a {
@@ -190,15 +190,15 @@
         /* Media query para telas médias */
         @media (min-width: 576px) and (max-width: 768px) {
             .header {
-                position: static; /* Remove o posicionamento absoluto */
-                justify-content: center; /* Centraliza os itens horizontalmente */
-                flex-wrap: nowrap; /* Garante que os itens fiquem em uma linha */
+                top: 15px; /* Ajusta a distância do topo para telas médias */
+                right: 15px; /* Ajusta a distância da borda direita para telas médias */
             }
 
             .header a {
                 font-size: 16px; /* Ajusta o tamanho da fonte para telas médias */
             }
         }
+
 
         
         .contact-link {
