@@ -112,6 +112,17 @@
         }
 
 
+   
+        /* Estilo adicional para dispositivos móveis ou layouts que necessitam de ajustes específicos */
+        @media (max-width: 768px) {
+            body {
+                background-size: contain; /* Alterar para 'contain' se desejar que a imagem inteira seja sempre visível */
+                background-attachment: scroll; /* Ajusta o comportamento em dispositivos móveis */
+            }
+        }
+
+
+
       
         body {
 
@@ -119,7 +130,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            background-attachment: fixed;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
