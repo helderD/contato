@@ -85,6 +85,33 @@
             }
         }
 
+
+                /* Estilo padrão para botões em telas maiores */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Espaçamento entre botões */
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        /* Estilos específicos para dispositivos móveis */
+        @media (max-width: 768px) {
+            .button-container {
+                flex-direction: column; /* Disposição dos botões em coluna */
+                align-items: center;
+            }
+
+            .button-container button {
+                width: 90%; /* Largura dos botões para ocupar quase toda a tela */
+                margin-bottom: 10px; /* Espaçamento entre os botões */
+            }
+        }
+
+
       
         body {
 
