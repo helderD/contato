@@ -11,6 +11,80 @@
     
 
     <style>
+
+
+        @media (max-width: 1200px) {
+            .text-container, .text-explanation, #trabalhos {
+                top: 80px;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .text-container, .text-explanation, #trabalhos {
+                max-width: 90%;
+                top: 60px;
+            }
+
+            .trabalho {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                top: 10px;
+                right: 10px;
+                align-items: flex-end;
+            }
+
+            .header a {
+                padding: 5px 10px;
+                font-size: 16px;
+            }
+
+            .whatsapp-icon {
+                font-size: 36px;
+            }
+
+            .text-container, .text-explanation, #trabalhos {
+                top: 40px;
+                padding: 10px;
+            }
+
+            .trabalho {
+                width: 90%;
+            }
+
+            .trabalho::after {
+                bottom: -40px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .header {
+                gap: 5px;
+            }
+
+            .header a {
+                font-size: 14px;
+            }
+
+            .text-container, .text-explanation, #trabalhos {
+                padding: 5px;
+            }
+
+            .whatsapp-icon img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .trabalho {
+                height: auto;
+            }
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -255,37 +329,6 @@
     </div>
 
 
-     <!-- Modal 
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg"> 
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="contactModalLabel">Enviar Email</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <form action="mailto:helder.rdiniz@gmail.com" method="post" enctype="text/plain">
-                <div class="mb-3">
-                <label for="name" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                <label for="message" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-            </div>
-        </div>
-        </div>
-    </div>
-    -->
-    
-  
 
     <script>
 
